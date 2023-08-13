@@ -1,0 +1,440 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+:root {
+  --btn-glow: hsl(186, 68%, 79%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+input, select, textarea {
+  color: #ffffff;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+label{
+  color: #ffffff;
+}
+
+
+#container {  
+  border: solid 3px var(--btn-glow);  
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+#container { 
+  
+  -webkit-text-shadow: 0 0 0.125em hsla(0, 0%, 83%, 0.3),
+    0 0 0.45em var(--btn-glow);
+  -moz-text-shadow: 0 0 2em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--btn-glow);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--btn-glow);
+  animation: text-flicker 5s linear infinite;
+}
+.atzsolution-co  {
+  color: aliceblue;
+  opacity: 0.5;
+  animation: faulty-flicker 1s linear infinite;
+}
+.atzsolution-n {
+  color: aliceblue;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--btn-glow);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--btn-glow);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--btn-glow);
+  animation: text-flicker 3s linear infinite;
+
+}
+.atzsolution-t  {
+  color: aliceblue;
+  opacity: 0.5;
+  animation: faulty-flicker 1s linear infinite;
+}
+.atzsolution-act {
+  color: aliceblue;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--btn-glow);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--btn-glow);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--btn-glow);
+  animation: text-flicker 3s linear infinite;
+
+}
+.atzsolution-us  {
+  color: aliceblue;
+  
+  animation: faulty-flicker 1s linear infinite;
+}
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #cfcfcf;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.email {
+  color: #cfcfcf;
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+  color: #cfcfcf;
+	float: none;
+}
+
+.name {
+  color: #cfcfcf;
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  color: #cfcfcf;
+  width: 100%;
+}
+
+.telephone {
+  color: #cfcfcf;
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+
+
+/*BUTTON AREA*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+
+.button-two {
+  position: relative;
+  color: var(--btn-glow);
+  cursor: pointer;
+  padding: 0.35em 0.95em;
+  border: 0.10em solid var(--btn-glow);
+  border-radius: 0.25em;
+  background: none;
+  perspective: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--btn-glow),
+    0px 0px 0.5em 0px var(--btn-glow);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--btn-glow),
+    0px 0px 0.5em 0px var(--btn-glow);
+  box-shadow: inset 0px 0px 0.5em 0px var(--btn-glow),
+    0px 0px 0.5em 0px var(--btn-glow);
+  animation: border-flicker 2s linear infinite;
+}
+
+.atzsolution-s {
+  float: left;
+  margin-right: -0.3em;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--btn-glow);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--btn-glow);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--btn-glow);
+  animation: text-flicker 1.5s linear infinite;
+}
+
+.atzsolution-e {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+.button-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--btn-glow);
+  pointer-events: none;
+}
+
+.button-two::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--btn-glow);
+  box-shadow: 0 0 2em 0.2em var(--btn-glow);
+  transition: opacity 100ms linear;
+}
+.atzsolution-n2 {
+  opacity: 0.5;
+  animation: faulty-flicker 1s linear infinite;
+}
+.atzsolution-d {
+  opacity: 0.5;
+  animation: faulty-flicker 1.5s linear infinite;
+}
+.button-two:hover {
+  color: black;
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+.button-two:hover::before {
+  filter: blur(1.5rem);
+  opacity: 1;
+}
+.button-two:hover::after {
+  opacity: 1;
+}
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .button-two{
+    font-size: 1em;
+  }
+}
